@@ -8,5 +8,11 @@ Future<Response> onRequest(RequestContext context) async {
 }
 
 Future<Response> _getUsers() {
-  return Future.value(Response.json());
+  return Future.value(
+    Response.json(
+      body: [
+        {'name': 'Tamani Sam'},
+      ],
+    ),
+  );
 }
