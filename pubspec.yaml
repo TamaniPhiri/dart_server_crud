@@ -8,6 +8,7 @@ environment:
 
 dependencies:
   dart_frog: ^1.0.0
+  orm: ^3.4.4
   postgres: ^2.6.3
 
 dev_dependencies:
