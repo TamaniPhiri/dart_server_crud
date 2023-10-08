@@ -16,3 +16,4 @@ build/
 # Test related files
 coverage/
 /node_modules
+.env
