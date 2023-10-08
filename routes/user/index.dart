@@ -12,6 +12,7 @@ Future<Response> _getUsers() {
     Response.json(
       body: [
         {'name': 'Tamani Sam'},
+        {'name': 'Troy Mac'},
       ],
     ),
   );
