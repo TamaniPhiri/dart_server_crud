@@ -3,6 +3,7 @@ import 'package:dart_frog/dart_frog.dart';
 Future<Response> onRequest(RequestContext context) async {
   return switch (context.request.method) {
     HttpMethod.get => _getUsers(),
+    HttpMethod.post => _createUser(context),
     _ => Future.value(Response.json(body: 'Default method'))
   };
 }
@@ -24,7 +25,7 @@ Future<Response> _createUser(RequestContext context) async {
   final email = json['email'];
   return Response.json(
     body: {
-      'message': 'User created',
+      'message': 'User created successfully',
       'name': name,
       'email': email,
     },
